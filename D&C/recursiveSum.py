@@ -20,6 +20,14 @@ def count__(arr):
     for _ in range(len(arr)):
         c+= 1
     return c
+
+
+def _sum(arr):
+    if len(arr) == 0:
+        return 0
+    else:
+        return arr[0] + _sum(arr[1:])
+    
     
     
 li = [1, 2, 3, 4, 5, 6 ,7, 8]
