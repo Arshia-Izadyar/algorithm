@@ -47,17 +47,17 @@ func and(s1, s2 []string) (res []string) {
 			}
 		}
 	}
-	return res
+	return 
 }
 
-func removeData(states_needed, covered []string) (res []string) {
+func removeData(states_needed, covered []string) []string {
 	for _, data := range covered {
 		states_needed = remove(states_needed, data)
 	}
 	return states_needed
 }
 
-func remove(states_needed []string, value string) (res []string) {
+func remove(states_needed []string, value string) []string {
 	for i, item := range states_needed {
 		if item == value {
 			states_needed = append(states_needed[:i], states_needed[i+1:]...)
