@@ -75,7 +75,7 @@ docs/_build/
 .pybuilder/
 target/
 testlol.py
-test*.py
+test.go
 # Jupyter Notebook
 .ipynb_checkpoints
 
