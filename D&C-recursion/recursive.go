@@ -66,10 +66,23 @@ func count_(list []int) int {
 	return count
 }
 
-func main() {
-	arr := []int{9, 2, 3, 4, 5}
-	t := max(arr)
-	fmt.Println(t)
-	c := r_count(arr)
-	fmt.Println(c)
+
+func fact(num int) (n int){
+	if num == 1{
+		return 1
+	}
+	return num * fact(num - 1)
 }
+
+
+func main() {
+	// arr := []int{9, 2, 3, 4, 5}
+	// t := max(arr)
+	// fmt.Println(t)
+	// c := r_count(arr)
+	// fmt.Println(c)
+	res := fact(3)
+	fmt.Println(res)
+}
+
+
