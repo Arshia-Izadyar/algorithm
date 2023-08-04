@@ -18,7 +18,6 @@ func main() {
 
 func covering(sn []string, stations map[string][]string) (final_stations []string) {
 
-
 	for len(sn) > 0 {
 		var best_station string
 		var states_covered []string
@@ -35,7 +34,7 @@ func covering(sn []string, stations map[string][]string) (final_stations []strin
 			sn = removeData(sn, states_covered)
 		}
 	}
-	return 
+	return
 
 }
 
@@ -47,7 +46,7 @@ func and(s1, s2 []string) (res []string) {
 			}
 		}
 	}
-	return 
+	return
 }
 
 func removeData(states_needed, covered []string) []string {
